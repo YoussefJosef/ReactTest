@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import 'materialize-css/dist/css/materialize.min.css'
 import {BrowserRouter, Route} from 'react-router-dom'
-import Todos from './components/Todos/Todos'
 import Home from './components/Home';
 import FormTest from './components/FormTest';
 import StateTodos from './components/Todos/StateTodos';
