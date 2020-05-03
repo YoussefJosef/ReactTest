@@ -1,7 +1,12 @@
 import React from 'react'
+import Rainbow from '../hoc/Rainbow'
 
 
-const FormTest = () => {
+const FormTest = (props) => {
+    setTimeout(() => {
+        console.log("FormTest.4s"+props)
+       // props.history.push('/todos')
+    },4000)
 return (
 <div className="container">
     <h4 className="center">FormTest</h4>
@@ -10,4 +15,4 @@ return (
 )
 }
 
-export default FormTest;
+export default Rainbow(FormTest);

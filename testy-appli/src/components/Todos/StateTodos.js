@@ -37,7 +37,7 @@ addTodo = (todo) => {
             <h1 className="center blue-text">Todo's</h1>
             <Todos todos = {this.state.todos} deleteTodo={this.deleteTodo} />
             <FormTodos addTodo={this.addTodo}></FormTodos>
-            <a  onClick={this.deleteAll} class="waves-effect waves-light btn"><i class="material-icons">Empty list</i></a>
+            <a  onClick={this.deleteAll} className="waves-effect waves-light btn"><i className="material-icons">Empty list</i></a>
 
         </div>   
          );
