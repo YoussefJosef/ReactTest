@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 class FormTodos extends Component {
-    state ={
-        content:''
+    state = {
+        content: ''
     }
     handleChange = (e) => {
         this.setState({
@@ -15,21 +15,21 @@ class FormTodos extends Component {
         this.setState({
             content: ''
         })
-        
+
 
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Add new Todo
                     </label>
-                    <input type="text" onChange={this.handleChange} value={this.state.content}/>
+                    <input type="text" onChange={this.handleChange} value={this.state.content} />
                 </form>
             </div>
         )
     }
 }
 
-export default FormTodos ;
+export default FormTodos;

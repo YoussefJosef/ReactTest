@@ -16,7 +16,7 @@ const Todos = ({todos, deleteTodo}) => {
 return (
 <div className="todos collection">
     <h4 className="center">Todo's List :</h4>
-    {todoList}
+    <div>{todoList}</div>
 </div>
 
 )
