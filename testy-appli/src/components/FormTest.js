@@ -3,10 +3,7 @@ import Rainbow from '../hoc/Rainbow'
 
 
 const FormTest = (props) => {
-    setTimeout(() => {
-        console.log("FormTest.4s" + props)
-        // props.history.push('/todos')
-    }, 4000)
+
     return (
         <div className="container">
             <h4 className="center">FormTest</h4>

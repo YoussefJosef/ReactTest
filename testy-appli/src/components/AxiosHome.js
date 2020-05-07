@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import { Link } from 'react-router-dom';
 import Pokeball from '../pokeball.png'
-class Home extends Component {
+
+export default class AxiosHome extends Component {
 
     state = {
         posts: []
@@ -25,7 +26,7 @@ class Home extends Component {
                     <div className="post card" key={post.id}  >
                         <img src={Pokeball} alt="pokeball" />
                         <div className="card-content">
-                            <Link to={'/' + post.id}>
+                            <Link to={'/axios/' + post.id}>
                             <span className="card-title red-text">{post.title}</span>
                             </Link>
                             <span className="">{post.body}</span>
@@ -37,12 +38,10 @@ class Home extends Component {
             );
         return (
             <div className="container home">
-                <h4 className="center">Home</h4>
+                <h4 className="center">AxiosHome</h4>
                 <div className="center span"></div>
                 <span>{postList}</span>
             </div>
         )
     }
-}
-
-export default Home;
+};

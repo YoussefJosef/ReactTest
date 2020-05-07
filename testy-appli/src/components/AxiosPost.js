@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import Axios from 'axios';
 
-export default class Post extends  PureComponent {
+export default class AxiosPost extends  PureComponent {
     state = {
         post: null
     }
